@@ -1,0 +1,26 @@
+{
+    "name": "waughj/php-autoload",
+    "description": "Simple function that autoloads files in directory.",
+    "keywords": [ "autoload" ],
+    "license": "AGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Jaimeson Waugh",
+            "email": "waughjai@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+		"php": ">=7.2",
+        "waughj/directory": "^0.3.1",
+        "waughj/file": "^0.2.0"
+    },
+    "require-dev": {
+		"phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "WaughJ\\PHPAutoload\\": "src/"
+        }
+    }
+}
